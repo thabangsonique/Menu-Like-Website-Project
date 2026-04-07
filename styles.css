@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* setting base colors for the webpage */
+
+:root {
+  --base-background: #16151a;
+  --base-muted-foreground: #35343a;
+  --base-foreground: #ffffff;
+  --base-theme-1: #c71622;
+}
