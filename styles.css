@@ -12,3 +12,29 @@
   --base-foreground: #ffffff;
   --base-theme-1: #c71622;
 }
+
+body {
+  background-color: var(--base-background);
+  color: var(--base-foreground);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+}
+
+/* styling the header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.hero {
+  width: 100%;
+}
