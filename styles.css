@@ -27,6 +27,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+  z-index: 10;
+  background: linear-gradient(to-bottom, black, rgba(0, 0, 0, 0) 70%);
 }
 
 ul {
@@ -35,6 +37,51 @@ ul {
   list-style: none;
 }
 
-.hero {
+#hero {
+  display: flex;
   width: 100%;
+  height: 500px;
+  background-image: url("img/extraction.jpg");
+  background-size: cover; /*makes image cover evenly the hero section*/
+  background-position: center; /* centers the image in the hero section*/
+  padding: 50px;
+  align-items: center;
+}
+
+/* hero contents styling */
+.container {
+  display: flex;
+  flex-direction: column; /* place contents in a column position*/
+  max-width: 600px;
+}
+
+.container h1 {
+  font-size: 70px;
+}
+
+.container p {
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: large;
+}
+
+/* styling the call to action button */
+.btn a {
+  background-color: var(--base-theme-1);
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  display: inline-block; /*gives the link the ability to be scaled*/
+}
+
+/* call to action button hover effect */
+.btn a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px rgba(199, 22, 34, 0.5);
+}
+
+.genre {
+  font-weight: 400;
+  margin-bottom: 30px;
 }
