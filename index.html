@@ -28,33 +28,131 @@
       </nav>
     </header>
 
-    <!-- hero section of the webpage -->
-    <main id="hero">
-      <div class="container">
-        <!-- hero text -->
-        <div class="genre">
-          <ul>
-            <li>2020</li>
-            <li>Action</li>
-            <li>Thriller</li>
-            <li>1h 56m</li>
-          </ul>
-        </div>
-        <h1>Extraction</h1>
-        <p>
-          A fearless mercenary faces his deadliest mission yet — rescuing a
-          crime lord’s son in Dhaka’s ruthless underworld, where survival and
-          sacrifice collide.
-        </p>
+    <main>
+      <!-- hero section of the webpage -->
+      <section id="hero">
+        <div class="container">
+          <!-- hero text -->
+          <div class="genre">
+            <ul>
+              <li>2020</li>
+              <li>Action</li>
+              <li>Thriller</li>
+              <li>1h 56m</li>
+            </ul>
+          </div>
+          <h1>Extraction</h1>
+          <p>
+            A fearless mercenary faces his deadliest mission yet — rescuing a
+            crime lord’s son in Dhaka’s ruthless underworld, where survival and
+            sacrifice collide.
+          </p>
 
-        <!-- Call to action buttons -->
-        <div class="btn">
-          <a> Rent Movie </a>
+          <!-- Call to action buttons -->
+          <div class="btn">
+            <a> Rent Movie </a>
+          </div>
         </div>
+      </section>
 
-        <!-- Movies Menu list -->
-        <div></div>
-      </div>
+      <!-- contents of the webpage -->
+      <section id="movies">
+        <div class="movies-container">
+          <h1>MOVIES TO RENT</h1>
+
+          <!-- movie list items container -->
+          <div class="movie-list">
+            <!-- text for all movies and fav movies selection -->
+            <div class="fav-movie">
+              <a href="#" class="btn">All Movies</a>
+              <a>Favourite Movies</a>
+            </div>
+
+            <!-- actual movies list -->
+
+            <!-- ACTION MOVIES -->
+            <div class="movies-list-box">
+              <h4>Action Movies</h4>
+
+              <!-- movie rows -->
+              <div class="movie">
+                <div class="movie-img">
+                  <img
+                    src="img/mad-max.png.png"
+                    alt="Mad max cover"
+                    width="150px"
+                  />
+                </div>
+                <div class="movie-title">
+                  <h2>Mad Max: Fury Road</h2>
+                  <p>
+                    In a desolate post-apocalyptic wasteland, a drifter named
+                    Max teams up with a rebel warrior to escape a tyrant and his
+                    ruthless army in a high-speed chase across the desert.
+                  </p>
+                  <span>Rating: <span>8.7/10</span></span>
+                </div>
+                <span class="price">$4.00</span>
+              </div>
+
+              <div class="movie">
+                <div class="movie-img">
+                  <img src="" alt="john wick cover" />
+                </div>
+                <div class="movie-title">
+                  <h2>John Wick</h2>
+                  <p>
+                    A retired hitman comes out of retirement to track down the
+                    men who wronged him, facing relentless enemies and
+                    high-stakes action in the criminal underworld.
+                  </p>
+                  <span>Rating: <span>8.7/10</span></span>
+                </div>
+                <span class="price">$5.00</span>
+              </div>
+            </div>
+
+            <!-- THRILLER MOVIES -->
+            <div class="movies-list-box">
+              <h4>Action Movies</h4>
+
+              <!--movie rows -->
+              <div class="movie">
+                <div class="movie-img">
+                  <img src="" alt="Mad max cover" />
+                </div>
+                <div class="movie-title">
+                  <h2>Gone Girl</h2>
+                  <p>
+                    When a woman mysteriously disappears on her fifth wedding
+                    anniversary, all eyes turn to her husband. Secrets, lies,
+                    and suspense spiral into a chilling thriller.
+                  </p>
+                  <span>Rating: <span>8.7/10</span></span>
+                </div>
+                <span class="price">$3.00</span>
+              </div>
+
+              <div class="movie">
+                <div class="movie-img">
+                  <img src="" alt="Mad max cover" />
+                </div>
+                <div class="movie-title">
+                  <h2>Prisoners</h2>
+                  <p>
+                    After two young girls go missing, a desperate father takes
+                    matters into his own hands while the police struggle to
+                    uncover the dark truth. Tension and suspense keep
+                    escalating.
+                  </p>
+                  <span>Rating: <span>8.7/10</span></span>
+                </div>
+                <span class="price">$7.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

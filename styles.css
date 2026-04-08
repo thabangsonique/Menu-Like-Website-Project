@@ -6,8 +6,9 @@
 
 /* setting base colors for the webpage */
 
+/*base theme colors*/
 :root {
-  --base-background: #16151a;
+  --base-background: #000000;
   --base-muted-foreground: #35343a;
   --base-foreground: #ffffff;
   --base-theme-1: #c71622;
@@ -26,9 +27,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  position: absolute; /*make the header section float for position abover the hero section*/
   padding: 20px 50px;
+  left: 0;
+  width: 100%;
   z-index: 10;
-  background: linear-gradient(to-bottom, black, rgba(0, 0, 0, 0) 70%);
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/*header logo text*/
+header h1 {
+  color: var(--base-theme-1);
+  font-size: 50px;
 }
 
 ul {
@@ -40,7 +55,7 @@ ul {
 #hero {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-image: url("img/extraction.jpg");
   background-size: cover; /*makes image cover evenly the hero section*/
   background-position: center; /* centers the image in the hero section*/
@@ -53,6 +68,7 @@ ul {
   display: flex;
   flex-direction: column; /* place contents in a column position*/
   max-width: 600px;
+  margin-top: 10rem;
 }
 
 .container h1 {
@@ -63,6 +79,7 @@ ul {
   line-height: 1.6;
   margin-bottom: 40px;
   font-size: large;
+  margin-top: 20px;
 }
 
 /* styling the call to action button */
@@ -77,11 +94,80 @@ ul {
 
 /* call to action button hover effect */
 .btn a:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /*slight increase to button when hovering*/
   box-shadow: 0 0 15px 5px rgba(199, 22, 34, 0.5);
 }
 
+/*styling the movie genre text*/
 .genre {
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+nav {
+  font-size: 20px;
+}
+
+/* movies list */
+#movies {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+/* entire container of the movies list */
+.movies-container {
+  max-width: 960px;
+}
+
+.movies-container h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.movie {
+  display: flex;
+  margin-top: 60px;
+}
+
+.movie-list {
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0e0e0f, #1a1920, #1e1e1f);
+  border-radius: 20px;
+  box-shadow: 0 60px 20px 20px rgba(0, 0, 0, 1);
+  padding: 50px;
+}
+
+/*styling container for the fav category selection*/
+.fav-movie {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+/* styling fav movie category text*/
+
+.fav-movie a {
+  transition: all 0.3s ease-in-out;
+  color: var(--base-foreground);
+  text-decoration: none;
+  display: inline-block; /*allow text to scale without affecting surrounding blocks*/
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.fav-movie a:hover {
+  background-color: var(--base-theme-1);
+  transform: scale(1.1);
+}
+/*styling for genre category sub-heading*/
+.movie-list h4 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+/*styling contents of the movie block containter*/
+.movie-title {
+  margin: 30px;
 }
