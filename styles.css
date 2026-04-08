@@ -112,7 +112,12 @@ ul {
 }
 
 nav {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+/* hover styles to links */
+nav li:hover {
+  color: var(--base-theme-1);
 }
 
 /* movies list */
