@@ -231,7 +231,7 @@ nav li:hover {
 }
 
 /* mobile screen view */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   nav ul {
     display: none; /*removes the nav links*/
   }
@@ -244,8 +244,34 @@ nav li:hover {
     max-width: 300px;
   }
 
+  .container p {
+    max-width: 250px;
+  }
+
+  .movie-title {
+    margin: 0 30px;
+    flex: 1;
+  }
+
   .movie-list {
     margin: 20px;
+  }
+
+  .movies-list-box p {
+    display: none;
+  }
+
+  .movies-list-box img {
+    width: 50px;
+  }
+
+  .movies-list-box h2 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 15px;
+    margin-left: 50px;
   }
 
   .menu-icon {
